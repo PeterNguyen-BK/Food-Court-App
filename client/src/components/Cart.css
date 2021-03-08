@@ -1,0 +1,80 @@
+.cart-title {
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.order-detail {
+    display: flex;
+}
+
+.list-detail {
+    flex-grow: 8;
+}
+
+.total-price {
+    flex-grow: 1;
+    margin-top: 17px;
+}
+
+.list-foods {
+    display: flex;
+}
+
+.list-foods .food-image {
+    width: 15%;
+}
+
+.list-foods .food-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.list-foods .food-info {
+    margin-left: 20px;
+    width: 85%;
+    text-align: start;
+}
+
+.food-info .food-name {
+    display: inline-block;
+}
+
+.food-info .food-price {
+    display: inline-block;
+    float: right;
+}
+
+.quantity-food {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.quantity-food .food-amount {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quantity-food button {
+    background-color: rgb(250, 250, 250); /* Green */
+    border: 1px solid #c9c9c9; 
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon {
+    position:absolute;
+    left:5.5px;
+    top:6px;
+}
