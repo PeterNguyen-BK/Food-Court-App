@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './components/Navbar';
 import Foods from './components/Foods';
 import { CartProvider } from './contexts/CartContext';
+import { NavProvider } from './contexts/NavContext';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,12 +12,12 @@ import {
 import './App.css';
 import Cart from './components/Cart';
 
-class App extends Component {
+const App = () => {
 
-  render() {
-    return (
-      <Router>
-        <CartProvider>
+  return (
+    <Router>
+      <CartProvider>
+        <NavProvider>
           <div className="App">
             <header className="App-header">
             </header>
@@ -26,10 +27,11 @@ class App extends Component {
               <Route path="/cart/" exact component = {Cart}/>
             </Switch>
           </div>
-        </CartProvider>
-      </Router>
-    );
-  }
+        </NavProvider>
+      </CartProvider>
+    </Router>
+  );
+    
 }
 
 export default App;

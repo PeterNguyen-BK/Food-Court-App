@@ -42,15 +42,23 @@
     display: inline-block;
 }
 
-.food-info .food-price {
-    display: inline-block;
+.food-info .price-quantity {
     float: right;
+    display: flex;
+    position: relative;
 }
 
 .quantity-food {
     display: flex;
     height: 30px;
     align-items: center;
+    margin-right: 10px;
+}
+
+.food-info .food-price {
+    display: inline-block;
+    padding-top: 2px;
+    margin-right: 20px;
 }
 
 .quantity-food .food-amount {
@@ -73,8 +81,32 @@
     position: relative;
 }
 
+.price-quantity .btn-remove {
+    border: none;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top:-18px;
+    left: 185px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    font-size: 18px;
+}
+
+.card:hover .btn-remove {
+    opacity: 1;
+}
+
 .icon {
     position:absolute;
     left:5.5px;
     top:6px;
+}
+
+.food-info p {
+    margin-bottom: 5px;
+}
+
+.food-info .food-discount {
+    font-size: 10px;
+    color: #aaaaaa;
 }

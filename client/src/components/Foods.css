@@ -1,0 +1,16 @@
+.list-foods {
+    margin-top: 20px;
+}
+
+.changePage-btn {
+    border: 1px solid #dee2e6;
+    background-color: white;
+}
+
+.page-item:hover {
+    cursor: pointer;
+}
+
+.page-link:last-child {
+    border-right: none;
+}
